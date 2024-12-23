@@ -1,0 +1,87 @@
+/* Stile base per mobile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 2.5em; /* Dimensioni più piccole per la versione mobile */
+}
+
+#quiz {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; /* Fai in modo che il pulsante occupi tutta la larghezza */
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Stile per il footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* Media Queries per schermi più grandi (tablet e desktop) */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.2em; /* Aumenta leggermente la dimensione del testo su schermi più grandi */
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #quiz {
+        padding: 20px;
+        margin: 40px auto;
+        width: 60%; /* Usa solo il 60% della larghezza su schermi più grandi */
+    }
+
+    button {
+        width: auto; /* Annulla il 100% di larghezza per i pulsanti su schermi più grandi */
+        font-size: 1em;
+    }
+}
+
+/* Media Queries per schermi desktop molto grandi */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    #quiz {
+        width: 50%;
+    }
+}
